@@ -1,0 +1,306 @@
+.main_container_content
+{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 210px 20px 0;
+}
+
+.header
+{
+    width: auto;
+    height: 50px;
+}
+
+.top_menu
+{
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.button_about_me,
+.button_how_ps, 
+.button_fav_movies
+{
+    font-size: 19px;
+    font-family: "Georgia";
+    color: rgb(0,0,0);
+    display: block;
+    height: 35px;
+    padding: 15px 20px 0;
+    float: left; 
+}
+
+.button_about_me:hover,
+.button_how_ps:hover,
+.button_fav_movies:hover
+{
+    color: rgb(245,245,245);
+}
+
+.button_about_me:hover,
+.button_how_ps:hover,
+.button_fav_movies:hover
+{
+    background-color: rgb(21,169,140);
+}
+
+.button_about_me i
+{
+    margin-right: 6px;
+}
+
+.button_how_ps i
+{
+    margin-right: 4px;
+}
+
+.button_fav_movies i
+{
+    margin-right: 3px;    
+}
+
+.main_container
+{
+    background: url('../images/background.png') no-repeat;
+    background-size: 1920px 400px;
+    background-position: top center;
+}
+
+.left_side
+{
+   float: left;
+   margin-right: 59px;
+   width: 330px;
+   padding-left: 9px;
+}
+
+.right_side
+{
+    margin-top: 45px;
+    width: 570px;
+    float: left;
+}
+
+.quote
+{
+    margin-top: -21px;
+    color: rgb(245,245,245);
+}
+
+.quote_main
+{
+    font-size: 28px;
+    line-height: 42px;
+    font-family: "Georgia";
+    font-style: italic;
+}
+
+.quote_footer
+{
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    line-height: 42px;
+}
+
+.left_side_information
+{
+    margin-top: 40px;
+}
+
+.right_side_information
+{
+    margin-top: 31px;
+    float: left;
+    width: 570px;
+}
+
+.some_favorite_title
+{
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: rgb(21,169,140);
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+.rectangle
+{
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #45c3a9;
+    margin: 0 0 44px 0;
+}
+
+.some_text_name_title
+{
+    font-size: 48px;
+    color: rgb(51, 51, 51);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.list_singers
+{
+    margin-bottom: 41px;
+}
+
+.list,
+.some_text_information
+{
+    font-size: 19px;
+    color: rgb(85,85,85);
+    font-family: "Georgia";
+}
+
+.list
+{
+    line-height: 36px;
+    margin-left: 21px;
+    margin-top: 12px;
+}
+
+.some_text_information
+{
+    line-height: 32px;
+    margin-bottom: 38px;
+    margin-top: 12px;
+}
+
+.some_text_ps_title
+{
+    font-size: 36px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.to_my_profile_link
+{
+    font-size: 19px;
+    color: rgb(21,169,139);
+    font-family: "Georgia";
+    margin-top: 50px;
+}
+
+.to_my_profile
+{
+    margin-top: 46px;
+}
+
+.to_my_profile_text
+{
+    text-decoration: underline;
+}
+
+.to_my_profile:hover span
+{
+    color: rgb(9, 141, 114);
+}
+
+.fav_movies_container
+{
+    width: 1200px;
+    margin: 94px auto 0;
+}
+
+.fav_movies_title
+{
+    font-size: 36px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans";
+    margin-bottom: 31px;
+    font-weight: 400;
+}
+
+.taxi_driver_description,
+.angry_man_description,
+.will_description,
+.lll_description
+{
+    width: 285px;
+    height: auto;
+    float: left;
+}
+
+.taxi_driver_description,
+.angry_man_description,
+.will_description
+{
+    margin-right: 20px;
+}
+
+.taxi_driver_description img,
+.angry_man_description img,
+.will_description img,
+.lll_description img
+{
+    width: 285px;
+    height: 190px;
+    border-radius: 5px;
+    margin-bottom: 19px;
+}
+
+.taxi_driver_description h4,
+.angry_man_description h4,
+.will_description h4,
+.lll_description h4
+{
+    font-size: 22px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.taxi_driver_description p,
+.angry_man_description p,
+.will_description p,
+.lll_description p
+{
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(85,85,85);
+    font-family: "Georgia";
+}
+
+.all_movies
+{
+    margin: 54px auto 70px;
+    width: 220px;
+    height: 50px;
+    background-color: rgb(21,169,139);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.all_movies:hover
+{
+    background-color: #098d71;
+}
+
+.all_movies span
+{
+    font-size: 19px;
+    color: rgb(245,245,245);
+    font-family: "Georgia";
+    line-height: 50px;
+}
+
+.footer
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    text-align: center;
+}
+
+.footer span
+{
+    font-size: 16px;
+    line-height: 75px;
+    color: rgb(85,85,85);
+    font-family: "Georgia";
+}
