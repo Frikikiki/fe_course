@@ -360,10 +360,11 @@
 
 .input_text
 {
-    width: 536px;
+    width: 504px;
     height: 46px;
     border-radius: 3px;
     border: 2px solid #c9c9c9;
+    padding: 0 16px;
 }
 
 .label_text
@@ -391,7 +392,9 @@
 
 .select,
 .label_male,
-.label_female
+.label_female,
+.text_area,
+.input_text
 {
     font-size: 18px;
     color: rgb(85,85,85);
@@ -416,10 +419,12 @@
 
 .text_area
 {
-    width: 537px;
+    width: 505px;
     height: 146px;
     border-radius: 3px;
-    border: 2px solid #c9c9c9;    
+    border: 2px solid #c9c9c9;
+    resize: none;
+    padding: 0 16px;
 }
 
 input[type=submit]
@@ -467,7 +472,12 @@ input[type=submit]:hover
     font-family: "Open Sans";
 }
 
-textarea 
+.radio,
+.label_male,
+.label_female,
+.select,
+.all_movies,
+.submit
 {
-    resize: none;
+    cursor: pointer;
 }
