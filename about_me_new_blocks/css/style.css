@@ -270,14 +270,19 @@
 .all_movies
 {
     margin: 54px auto 70px;
-    width: 220px;
-    height: 50px;
-    background-color: rgb(21,169,139);
-    border-radius: 5px;
     text-align: center;
 }
 
-.all_movies:hover
+.all_movies button
+{
+    background-color: rgb(21,169,139);
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.all_movies button:hover
 {
     background-color: #098d71;
 }
