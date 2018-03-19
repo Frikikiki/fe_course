@@ -22,13 +22,14 @@
         height: 35px;
         padding: 15px 20px 0;
         float: left; 
-    }
+        
+        &:hover   
+        {
+            color: rgb(245,245,245);
+            background-color: $main_color;
+        }    
 
-    a:hover
-    {
-        color: rgb(245,245,245);
-        background-color: $main_color;
-    }    
+    }
 
     .button_about_me i
     {
@@ -186,11 +187,11 @@
             color: $main_color;
             font-family: "Georgia";
             margin-top: 50px;
-        }
-        
-        :hover span
-        {
-            color: rgb(9, 141, 114);
+            
+            &:hover span
+            {
+                color: rgb(9, 141, 114);
+            }
         }
     } 
 }
@@ -274,13 +275,13 @@
             width: 220px;
             height: 50px;
             border-radius: 5px;
+            
+            &:hover
+            {
+                background-color: $button_hover_color;
+            }
         }
         
-        button:hover
-        {
-            background-color: $button_hover_color;
-        }
-
         span
         {
             font-size: 19px;
@@ -396,20 +397,16 @@
     border-radius: 3px;
     border: 2px solid #c9c9c9;
     padding: 0 16px;
-}
-
-.input_text:hover,
-.select:hover,
-.text_area:hover
-{
-    border-color: rgb(166, 166, 166);
-}
-
-.input_text:focus,
-.select:focus,
-.text_area:focus
-{
-    border-color: $main_color;
+    
+    &:hover
+    {
+        border-color: rgb(166, 166, 166);
+    }
+    
+    &:focus
+    {
+        border-color: $main_color;
+    }
 }
 
 .user_message
@@ -429,12 +426,12 @@ input[type=submit]
     color: rgb(245,245,245);
     font-family: "Georgia";
     text-align: center;
-}    
     
-input[type=submit]:hover
-{
-    background-color: $button_hover_color;   
-}
+    &:hover
+    {
+        background-color: $button_hover_color;   
+    }
+}    
 
 .radio,
 .label_male,

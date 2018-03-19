@@ -30,9 +30,9 @@ label, form, input {
     height: 35px;
     padding: 15px 20px 0;
     float: left; }
-  .top_menu a:hover {
-    color: whitesmoke;
-    background-color: #15a98c; }
+    .top_menu a:hover {
+      color: whitesmoke;
+      background-color: #15a98c; }
   .top_menu .button_about_me i {
     margin-right: 6px; }
   .top_menu .button_how_ps i {
@@ -128,8 +128,8 @@ label, form, input {
       color: #15a98c;
       font-family: "Georgia";
       margin-top: 50px; }
-    .right_side_information .to_my_profile :hover span {
-      color: #098d72; }
+      .right_side_information .to_my_profile a:hover span {
+        color: #098d72; }
 
 .to_my_profile_text {
   text-decoration: underline; }
@@ -190,8 +190,8 @@ label, form, input {
       width: 220px;
       height: 50px;
       border-radius: 5px; }
-    .fav_movies_container .all_movies button:hover {
-      background-color: #098d71; }
+      .fav_movies_container .all_movies button:hover {
+        background-color: #098d71; }
     .fav_movies_container .all_movies span {
       font-size: 19px;
       color: whitesmoke;
@@ -272,16 +272,14 @@ label, form, input {
   border-radius: 3px;
   border: 2px solid #c9c9c9;
   padding: 0 16px; }
-
-.input_text:hover,
-.select:hover,
-.text_area:hover {
-  border-color: #a6a6a6; }
-
-.input_text:focus,
-.select:focus,
-.text_area:focus {
-  border-color: #15a98c; }
+  .input_text:hover,
+  .select:hover,
+  .text_area:hover {
+    border-color: #a6a6a6; }
+  .input_text:focus,
+  .select:focus,
+  .text_area:focus {
+    border-color: #15a98c; }
 
 .user_message {
   margin-top: 41px; }
@@ -297,9 +295,8 @@ input[type=submit] {
   color: whitesmoke;
   font-family: "Georgia";
   text-align: center; }
-
-input[type=submit]:hover {
-  background-color: #098d71; }
+  input[type=submit]:hover {
+    background-color: #098d71; }
 
 .radio,
 .label_male,
