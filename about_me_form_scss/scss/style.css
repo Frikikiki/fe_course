@@ -91,10 +91,11 @@ label, form, input {
     font-weight: 600; }
   .left_side_information ul, .left_side_information ol {
     line-height: 36px;
-    margin-left: 21px;
+    list-style-position: inside;
     margin-top: 12px; }
   .left_side_information ul {
-    margin-bottom: 41px; }
+    margin-bottom: 41px;
+    margin-left: 5px; }
 
 .right_side_information {
   margin-top: 30px;
@@ -198,8 +199,7 @@ label, form, input {
       font-family: "Georgia";
       line-height: 50px; }
 
-.line_left,
-.line_right {
+.line {
   display: inline-block;
   margin-bottom: 12px; }
 
@@ -213,10 +213,7 @@ label, form, input {
     display: inline;
     margin: 0 21px; }
 
-.label_text,
-.label_select,
-.gender,
-.user_message {
+.field_title {
   font-size: 20px;
   color: #333333;
   font-family: "Open Sans";
@@ -242,11 +239,7 @@ label, form, input {
   -webkit-appearance: none;
   background: transparent url("../images/arrow_down.png") no-repeat 97% center; }
 
-.select,
-.label_male,
-.label_female,
-.text_area,
-.input_text {
+.field_text {
   font-size: 18px;
   color: #555555;
   font-family: "Open Sans"; }
@@ -266,19 +259,13 @@ label, form, input {
   height: 146px;
   resize: none; }
 
-.input_text,
-.select,
-.text_area {
+.active_field {
   border-radius: 3px;
   border: 2px solid #c9c9c9;
   padding: 0 16px; }
-  .input_text:hover,
-  .select:hover,
-  .text_area:hover {
+  .active_field:hover {
     border-color: #a6a6a6; }
-  .input_text:focus,
-  .select:focus,
-  .text_area:focus {
+  .active_field:focus {
     border-color: #15a98c; }
 
 .user_message {
@@ -298,13 +285,7 @@ input[type=submit] {
   input[type=submit]:hover {
     background-color: #098d71; }
 
-.radio,
-.label_male,
-.label_female,
-.select,
-.all_movies,
-.submit,
-.all_movies button {
+.cursor_pointer {
   cursor: pointer; }
 
 .footer {

@@ -12,15 +12,15 @@
     <body>
         <div class="header">
             <nav class="top_menu">
-                <a class="button_about_me" href="#link_about_me">
+                <a class="menu_button button_about_me" href="#link_about_me">
                     <i class="fa fa-user"></i>
                     <span>About me</span>
                 </a>
-                <a class="button_how_ps" href="#link_how_ps">
+                <a class="menu_button button_how_ps" href="#link_how_ps">
                     <i class="fa fa-heart"></i>
                     <span>My PS</span>
                 </a>
-                <a class="button_fav_movies" href="#link_fav_movies">
+                <a class="menu_button button_fav_movies" href="#link_fav_movies">
                     <i class="fa fa-video-camera"></i>
                     <span>Favorite movies</span>
                 </a>
@@ -68,7 +68,7 @@
                     </blockquote>                 
                     <div class="right_side_information">
                         <div class="some_text">
-                            <a id="link_about_me"><h1 class="some_text_name_title">Grigor Ogannisian</h1></a>
+                            <a id="link_about_me"></a><h1 class="some_text_name_title">Grigor Ogannisian</h1>
                             <div class="rectangle"></div>
                             <p class="some_text_information">
                                 I am an eighteen years old guy. <br>
@@ -78,7 +78,7 @@
                             </p>
                         </div>
                         <div class="some_text">
-                            <a id="link_how_ps"><h2 class="some_text_ps_title">How i got to PS</h2></a>
+                            <a id="link_how_ps"></a><h2 class="some_text_ps_title">How i got to PS</h2>
                             <p class="some_text_information">
                                 I very love mathematics. <br>
                                 I like to think systematically and logically. <br>
@@ -99,65 +99,65 @@
             </div>  
             <div class="fav_movies">
                 <div class="fav_movies_container">
-                    <a id="link_fav_movies"><h3 class="fav_movies_title">Favorite movies</h3></a>
+                    <a id="link_fav_movies"></a><h3 class="fav_movies_title">Favorite movies</h3>
                     <div class="movies_description">
-                        <div class="taxi_driver_description">
+                        <div class="all_movies_description taxi_driver_description">
                             <img src="images/taxi_driver.png" alt="">
                             <h4>Taxi Driver</h4>
                             <p>A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action, while attempting to liberate a twelve-year-old prostitute.</p>
                         </div>
-                        <div class="angry_man_description">
+                        <div class="all_movies_description angry_man_description">
                             <img src="images/12_angry_man.png" alt="">
                             <h4>12 Angry Man</h4>
                             <p>A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.</p>
                         </div>
-                        <div class="will_description">
+                        <div class="all_movies_description will_description">
                             <img src="images/good_will_hunting.jpg" alt="">
                             <h4>Good Will Hunting</h4>
                             <p>Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.</p>
                         </div>
-                        <div class="lll_description">
+                        <div class="all_movies_description lll_description">
                             <img src="images/la_la_land.jpg" alt="">
                             <h4>La La Land</h4>
                             <p>While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.</p>
                         </div>
                         <div class="clear"></div>
                     </div>
-                    <div class="all_movies">
-                        <button class="all_movies_button"><span>All movies</span></button>
+                    <div class="cursor_pointer all_movies">
+                        <button class="cursor_pointer all_movies_button"><span>All movies</span></button>
                     </div>
                 </div>
             </div>
             <div class="write_form">
                 <div class="write_form_header">
-                    <img class="line_left" src="images/line.png" alt="">
+                    <img class="line line_left" src="images/line.png" alt="">
                     <h3>WRITE ME</h3>
-                    <img class="line_right" src="images/line.png" alt="">
+                    <img class="line line_right" src="images/line.png" alt="">
                 </div>
                 <div class="write_form_container">
                     <form action="#" name="write_form">
-                        <label for="user_name" class="label_text">Your name<span class="star"> *</span></label><br>
-                        <input type="text" id="user_name" name="user_name" class="input_text"/><br>
-                        <label for="email" class="label_text">Your email<span class="star"> *</span></label><br>
-                        <input type="email" id="email" name="email" class="input_text"/><br>
-                        <label for="location" class="label_select">Where are you from?</label><br>
-                        <select name=”country” class="select" id="location">
+                        <label for="user_name" class="label_text field_title">Your name<span class="star"> *</span></label><br>
+                        <input type="text" id="user_name" name="user_name" class="active_field input_text field_text"/><br>
+                        <label for="email" class="label_text field_title">Your email<span class="star"> *</span></label><br>
+                        <input type="email" id="email" name="email" class="active_field input_text field_text"/><br>
+                        <label for="location" class="label_select field_title">Where are you from?</label><br>
+                        <select name=”country” class="active_field cursor_pointer select field_text" id="location">
                             <option class="option" value=”Russia”>Russia</option>
                             <option class="option" value=”USA”>USA</option>
                             <option class="option" value=”Other”>Other</option>
                         </select><br>
-                        <p class="gender">Your gender</p>
-                        <label class="label_male">
-                          <input type="radio" checked name="gender" class="radio"/><span>Male</span>
+                        <p class="gender field_title">Your gender</p>
+                        <label class="cursor_pointer label_male field_text">
+                          <input type="radio" checked name="gender" class="cursor_pointer radio"/><span>Male</span>
                         </label>
-                        <label class="label_female">
-                          <input type="radio" name="gender" class="radio"/><span>Female</span>
+                        <label class="cursor_pointer label_female field_text">
+                          <input type="radio" name="gender" class="cursor_pointer radio"/><span>Female</span>
                         </label>
-                        <p class="user_message">
+                        <p class="user_message field_title">
                             Your message<span class="star"> *</span>
                         </p>
-                        <textarea name=”about_me” rows=10 class="text_area"></textarea><br>
-                        <input type="submit" value="Send" class="submit">
+                        <textarea name=”about_me” rows=10 class="active_field text_area field_text"></textarea><br>
+                        <input type="submit" value="Send" class="cursor_pointer submit">
                     </form>
                 </div>    
             </div>

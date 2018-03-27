@@ -18,9 +18,7 @@
     padding-left: 20px;
 }
 
-.button_about_me,
-.button_how_ps, 
-.button_fav_movies
+.menu_button
 {
     font-size: 19px;
     font-family: "Georgia";
@@ -31,17 +29,9 @@
     float: left; 
 }
 
-.button_about_me:hover,
-.button_how_ps:hover,
-.button_fav_movies:hover
+.menu_button:hover
 {
     color: rgb(245,245,245);
-}
-
-.button_about_me:hover,
-.button_how_ps:hover,
-.button_fav_movies:hover
-{
     background-color: rgb(21,169,140);
 }
 
@@ -125,7 +115,7 @@
     font-weight: 600;
 }
 
-.rectangle
+.some_text_name_title:after
 {
     width: 60px;
     height: 6px;
@@ -146,6 +136,7 @@
 .singers_list
 {
     margin-bottom: 41px;
+    margin-left: 5px;
 }
 
 .list,
@@ -159,8 +150,7 @@
 .list
 {
     line-height: 36px;
-    margin-left: 21px;
-
+    list-style-position: inside;
     margin-top: 12px;
 }
 
@@ -224,10 +214,7 @@
     font-weight: 400;
 }
 
-.taxi_driver_description,
-.angry_man_description,
-.will_description,
-.lll_description
+.all_movies_description
 {
     width: 285px;
     height: auto;
@@ -241,10 +228,7 @@
     margin-right: 20px;
 }
 
-.taxi_driver_description img,
-.angry_man_description img,
-.will_description img,
-.lll_description img
+.all_movies_description img
 {
     width: 285px;
     height: 190px;
@@ -252,10 +236,7 @@
     margin-bottom: 19px;
 }
 
-.taxi_driver_description h4,
-.angry_man_description h4,
-.will_description h4,
-.lll_description h4
+.all_movies_description h4
 {
     font-size: 22px;
     color: rgb(51,51,51);
@@ -264,10 +245,7 @@
     margin-bottom: 18px;
 }
 
-.taxi_driver_description p,
-.angry_man_description p,
-.will_description p,
-.lll_description p
+.all_movies_description p
 {
     font-size: 16px;
     line-height: 28px;
@@ -325,8 +303,7 @@
     font-family: "Georgia";
 }
 
-.line_left,
-.line_right
+.line
 {
     display: inline-block;
     margin-bottom: 12px;
@@ -347,10 +324,7 @@
     margin: 0 21px;
 }
 
-.label_text,
-.label_select,
-.gender,
-.user_message
+.field_title
 {
     font-size: 20px;
     color: rgb(51,51,51);
@@ -395,11 +369,7 @@
     
 }
 
-.select,
-.label_male,
-.label_female,
-.text_area,
-.input_text
+.field_text
 {
     font-size: 18px;
     color: rgb(85,85,85);
@@ -456,16 +426,12 @@ input[type=submit]:hover
     background-color: #098d71;   
 }
 
-.text_area:hover,
-.input_text:hover,
-.select:hover
+.active_field:hover
 {
     border-color: rgb(166, 166, 166);
 }
 
-.text_area:focus,
-.input_text:focus,
-.select:focus
+.active_field:focus,
 {
     border-color: rgb(21, 169, 140);
 }
@@ -477,13 +443,7 @@ input[type=submit]:hover
     font-family: "Open Sans";
 }
 
-.radio,
-.label_male,
-.label_female,
-.select,
-.all_movies,
-.submit,
-.all_movies button
+.cursor_pointer
 {
     cursor: pointer;
 }

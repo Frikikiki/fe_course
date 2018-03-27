@@ -67,7 +67,7 @@
                     </blockquote>                 
                     <div class="right_side_information">
                         <div class="some_text">
-                            <a id="link_about_me"><h1 class="some_text_name_title">Grigor Ogannisian</h1></a>
+                            <a id="link_about_me"></a><h1 class="some_text_name_title">Grigor Ogannisian</h1>
                             <div class="rectangle"></div>
                             <p class="some_text_information">
                                 I am an eighteen years old guy. <br>
@@ -77,7 +77,7 @@
                             </p>
                         </div>
                         <div class="some_text">
-                            <a id="link_how_ps"><h2 class="some_text_ps_title">How i got to PS</h2></a>
+                            <a id="link_how_ps"></a><h2 class="some_text_ps_title">How i got to PS</h2>
                             <p class="some_text_information">
                                 I very love mathematics. <br>
                                 I like to think systematically and logically. <br>
@@ -98,7 +98,7 @@
             </div>  
             <div class="fav_movies">
                 <div class="fav_movies_container">
-                    <a id="link_fav_movies"><h3 class="fav_movies_title">Favorite movies</h3></a>
+                    <a id="link_fav_movies"></a><h3 class="fav_movies_title">Favorite movies</h3>
                     <div class="movies_description">
                         <div class="taxi_driver_description">
                             <img src="images/taxi_driver.png" alt="">
@@ -122,41 +122,41 @@
                         </div>
                         <div class="clear"></div>
                     </div>
-                    <div class="all_movies">
-                        <button class="all_movies_button"><span>All movies</span></button>
+                    <div class="all_movies cursor_pointer">
+                        <button class="all_movies_button cursor_pointer"><span>All movies</span></button>
                     </div>
                 </div>
             </div>
             <div class="write_form">
                 <div class="write_form_header">
-                    <img class="line_left" src="images/line.png" alt="">
+                    <img class="line line_left" src="images/line.png" alt="">
                     <h3>WRITE ME</h3>
-                    <img class="line_right" src="images/line.png" alt="">
+                    <img class="line line_right" src="images/line.png" alt="">
                 </div>
                 <div class="write_form_container">
                     <form action="#" name="write_form">
-                        <label for="user_name" class="label_text">Your name<span class="star"> *</span></label><br>
-                        <input type="text" id="user_name" name="user_name" class="input_text"/><br>
-                        <label for="email" class="label_text">Your email<span class="star"> *</span></label><br>
-                        <input type="email" id="email" name="email" class="input_text"/><br>
-                        <label for="location" class="label_select">Where are you from?</label><br>
-                        <select name=”country” class="select" id="location">
+                        <label for="user_name" class="label_text field_title">Your name<span class="star"> *</span></label><br>
+                        <input type="text" id="user_name" name="user_name" class="active_field input_text field_text"/><br>
+                        <label for="email" class="label_text field_title">Your email<span class="star"> *</span></label><br>
+                        <input type="email" id="email" name="email" class="active_field input_text field_text"/><br>
+                        <label for="location" class="label_select field_title">Where are you from?</label><br>
+                        <select name=”country” class="active_field select field_text cursor_pointer" id="location">
                             <option class="option" value=”Russia”>Russia</option>
                             <option class="option" value=”USA”>USA</option>
                             <option class="option" value=”Other”>Other</option>
                         </select><br>
-                        <p class="gender">Your gender</p>
-                        <label class="label_male">
-                          <input type="radio" checked name="gender" class="radio"/><span>Male</span>
+                        <p class="gender field_title">Your gender</p>
+                        <label class="label_male field_text cursor_pointer ">
+                          <input type="radio" checked name="gender" class="cursor_pointer radio"/><span>Male</span>
                         </label>
-                        <label class="label_female">
-                          <input type="radio" name="gender" class="radio"/><span>Female</span>
+                        <label class="label_female field_text cursor_pointer ">
+                          <input type="radio" name="gender" class="cursor_pointer radio"/><span>Female</span>
                         </label>
-                        <p class="user_message">
+                        <p class="user_message field_title">
                             Your message<span class="star"> *</span>
                         </p>
-                        <textarea name=”about_me” rows=10 class="text_area"></textarea><br>
-                        <input type="submit" value="Send" class="submit">
+                        <textarea name=”about_me” rows=10 class="active_field text_area field_text"></textarea><br>
+                        <input type="submit" value="Send" class="submit cursor_pointer">
                     </form>
                 </div>    
             </div>

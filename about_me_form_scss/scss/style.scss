@@ -128,16 +128,17 @@
     ul, ol
     {
         line-height: 36px;
-        margin-left: 21px;
+        list-style-position: inside;
         margin-top: 12px;
     }
     
     ul
     {
         margin-bottom: 41px;
+        margin-left: 5px;
     }
 }
-
+    
 .right_side_information
 {
     margin-top: 30px;
@@ -293,8 +294,7 @@
 }
 
 //Начало стилей формы
-.line_left,
-.line_right
+.line
 {
     display: inline-block;
     margin-bottom: 12px;
@@ -315,10 +315,7 @@
     }
 }
 
-.label_text,
-.label_select,
-.gender,
-.user_message
+.field_title
 {
     font-size: 20px;
     color: rgb(51,51,51);
@@ -356,11 +353,7 @@
     background: transparent url("../images/arrow_down.png") no-repeat 97% center;
 }
 
-.select,
-.label_male,
-.label_female,
-.text_area,
-.input_text
+.field_text
 {
     font-size: 18px;
     color: rgb(85,85,85);
@@ -390,9 +383,7 @@
     resize: none;
 }
 
-.input_text,
-.select,
-.text_area
+.active_field
 {
     border-radius: 3px;
     border: 2px solid #c9c9c9;
@@ -433,13 +424,7 @@ input[type=submit]
     }
 }    
 
-.radio,
-.label_male,
-.label_female,
-.select,
-.all_movies,
-.submit,
-.all_movies button
+.cursor_pointer
 {
     cursor: pointer;
 }
