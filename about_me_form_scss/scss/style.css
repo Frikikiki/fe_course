@@ -64,11 +64,10 @@ label, form, input {
   padding-left: 10px; }
 
 .content_right_side {
-  margin-top: 45px;
+  margin-top: 24px;
   width: 570px;
   float: left; }
   .content_right_side blockquote {
-    margin-top: -21px;
     color: whitesmoke; }
     .content_right_side blockquote p {
       font-size: 28px;
@@ -89,12 +88,12 @@ label, form, input {
     color: #15a98c;
     font-family: "Open Sans";
     font-weight: 600; }
-  .left_side_information ul, .left_side_information ol {
+  .left_side_information .list {
     line-height: 36px;
     list-style-position: inside;
-    margin-top: 12px; }
+    margin-top: 12px;
+    margin-bottom: 41px; }
   .left_side_information ul {
-    margin-bottom: 41px;
     margin-left: 5px; }
 
 .right_side_information {
@@ -136,7 +135,7 @@ label, form, input {
   text-decoration: underline; }
 
 .list,
-.some_text_information {
+.text_information {
   font-size: 19px;
   color: #555555;
   font-family: "Georgia"; }

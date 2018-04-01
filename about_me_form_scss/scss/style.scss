@@ -1,5 +1,5 @@
 @import "reset";
-@import "vars";
+@import "consts";
 
 .header
 {
@@ -86,13 +86,12 @@
 
 .content_right_side
 {
-    margin-top: 45px;
+    margin-top: 24px;
     width: 570px;
     float: left;
 
      blockquote
     {
-        margin-top: -21px;
         color: rgb(245,245,245);
 
         p
@@ -125,16 +124,17 @@
         font-weight: 600;
     }
     
-    ul, ol
+    .list
     {
         line-height: 36px;
         list-style-position: inside;
         margin-top: 12px;
+        margin-bottom: 41px;
     }
     
     ul
     {
-        margin-bottom: 41px;
+        
         margin-left: 5px;
     }
 }
@@ -203,7 +203,7 @@
 }
 
 .list,
-.some_text_information
+.text_information
 {
     font-size: 19px;
     color: rgb(85,85,85);
