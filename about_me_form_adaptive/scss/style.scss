@@ -1,0 +1,517 @@
+@import "reset";
+@import "consts";
+
+.header
+{
+    width: auto;
+    height: 50px;
+}
+
+.button_menu
+{
+    display: none;
+    font-size: 19px;
+    font-family: "Georgia";
+    color: rgb(0,0,0);
+    height: 50px;
+    text-align: center;
+    width: 100px;
+    transition: 0.6s ease;
+    
+    i
+    {
+        margin-right: 10px;
+    }
+    
+    ul
+    {
+        list-style: none;
+    }
+}
+
+.drop_down_menu
+{
+    text-align: left;
+    display: none;
+    position: absolute;
+    margin: 14px 0 0 -10px;
+
+    a
+    {
+        font-size: 19px;
+        background-color: white;
+        font-family: "Georgia";
+        color: rgb(0,0,0);
+        display: block;
+        height: 35px;
+        padding: 15px 20px 0;
+        transition: 0.6s ease;
+        
+        &:hover   
+        {
+            color: rgb(245,245,245);
+            background-color: $main_color;
+            transition: 0.6s ease;
+        }    
+
+    }
+}
+
+.drop_down_menu_title
+{
+    padding-top: 15px;
+}
+
+.top_menu
+{
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+
+    a
+    {
+        font-size: 19px;
+        font-family: "Georgia";
+        color: rgb(0,0,0);
+        display: block;
+        height: 35px;
+        padding: 15px 20px 0;
+        float: left; 
+        transition: 0.6s ease;
+        
+        &:hover   
+        {
+            color: rgb(245,245,245);
+            background-color: $main_color;
+            transition: 0.6s ease;
+        }    
+
+    }
+
+    .button_about_me i
+    {
+        margin-right: 6px;
+    }
+
+    .button_how_ps i
+    {
+        margin-right: 4px;
+    }
+
+    .button_fav_movies i
+    {
+        margin-right: 3px;    
+    }
+}
+
+.main_container
+{
+    background: url('../images/background.png') no-repeat;
+    background-size: 1920px 400px;
+    background-position: top center;
+    
+    .content
+    {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 211px 20px 0;
+    }
+    
+    .fav_movies
+    {
+        width: 100%;
+        background-color: #f5f5f5;
+        margin-top: 63px;
+        padding: 1px 0 60px;
+    }
+    
+    .write_form
+    {
+        padding: 41px 0 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.content_left_side
+{
+   float: left;
+   margin-right: 59px;
+   width: 330px;
+   padding-left: 10px;
+   
+   img
+   {
+       width: 100%;
+       max-width: 330px;
+   }
+}
+
+.content_right_side
+{
+    margin-top: 24px;
+    width: 570px;
+    float: left;
+
+     blockquote
+    {
+        color: rgb(245,245,245);
+
+        p
+        {
+            font-size: 28px;
+            line-height: 42px;
+            font-family: "Georgia";
+            font-style: italic;
+        }
+        footer
+        {
+            font-size: 16px;
+            font-family: "Open Sans";
+            font-weight: bold;
+            line-height: 42px;
+        }
+    }
+}
+
+.left_side_information
+{
+    margin-top: 39px;
+    
+    span
+    {
+        margin-bottom: 12px;
+        font-size: 24px;
+        color: $main_color;
+        font-family: "Open Sans";
+        font-weight: 600;
+    }
+    
+    .list
+    {
+        line-height: 36px;
+        list-style-position: inside;
+        margin-top: 12px;
+        margin-bottom: 41px;
+    }
+    
+    ul
+    {
+        
+        margin-left: 5px;
+    }
+}
+    
+.right_side_information
+{
+    margin-top: 30px;
+    float: left;
+    width: 570px;
+    
+    h1
+    {
+        font-size: 48px;
+        color: rgb(51, 51, 51);
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        margin-bottom: 21px; 
+    }
+    
+    .rectangle
+    {
+        width: 60px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $main_color;
+        margin: 0 0 43px 0;
+    }
+    
+    h2
+    {
+        font-size: 36px;
+        color: rgb(51,51,51);
+        font-family: "Open Sans";
+        font-weight: 400;
+    }
+    
+    p
+    {
+        line-height: 32px;
+        margin-bottom: 38px;
+        margin-top: 12px;
+    }
+    
+    .to_my_profile
+    {
+        margin-top: 46px;
+        
+        a
+        {
+            font-size: 19px;
+            color: $main_color;
+            font-family: "Georgia";
+            margin-top: 50px;
+            
+            &:hover span
+            {
+                color: rgb(9, 141, 114);
+            }
+        }
+    } 
+}
+
+.to_my_profile_text
+{
+    text-decoration: underline;
+}
+
+.list,
+.text_information
+{
+    font-size: 19px;
+    color: rgb(85,85,85);
+    font-family: "Georgia";
+}
+
+.fav_movies_container
+{
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto 0;
+    
+    h3
+    {
+        font-size: 36px;
+        color: rgb(51,51,51);
+        font-family: "Open Sans";
+        margin-bottom: 31px;
+        font-weight: 400;
+    }
+    
+    .lll_description
+    {
+        max-width: 285px;
+        width: 100%;
+        height: auto;
+        float: left;
+        
+        img
+        {
+            max-width: 285px;
+            width: 100%;
+            height: 190px;
+            border-radius: 5px;
+            margin-bottom: 19px;
+        }
+        
+        h4
+        {
+            font-size: 22px;
+            color: rgb(51,51,51);
+            font-family: "Open Sans";
+            font-weight: bold;
+            margin-bottom: 18px;
+            max-width: 285px;
+            width: 100%;
+        }
+        
+        p
+        {
+            font-size: 16px;
+            line-height: 28px;
+            color: rgb(85,85,85);
+            font-family: "Georgia";
+            max-width: 285px;
+            width: 100%;
+        }
+    }
+    
+    .taxi_driver_description,
+    .angry_man_description,
+    .will_description
+    {
+        @extend .lll_description;
+        margin-right: 20px;
+    }
+    
+    .all_movies
+    {
+        margin: 54px auto 0;
+        text-align: center;
+        width: 220px;
+    
+        button
+        {
+            background-color: $main_color;
+            width: 220px;
+            height: 50px;
+            border-radius: 5px;
+            
+            &:hover
+            {
+                background-color: $button_hover_color;
+            }
+        }
+        
+        span
+        {
+            font-size: 19px;
+            color: rgb(245,245,245);
+            font-family: "Georgia";
+            line-height: 50px;
+        }
+    }    
+}
+
+//Начало стилей формы
+.line
+{
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.write_form_header
+{
+    margin-bottom: 41px;
+    
+    h3
+    {
+        font-size: 36px;
+        font-family: "Open Sans", sans-serif;
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        display: inline;
+        margin: 0 21px;
+    }
+}
+
+.field_title
+{
+    font-size: 20px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans";
+    margin-bottom: 6px;
+}
+
+.input_text
+{
+    width: 504px;
+    height: 46px;
+}
+
+.label_text
+{
+    margin-top: 26px;
+}
+
+.label_select
+{
+    margin-top: 28px;
+}
+
+.star
+{
+    color: red;
+}
+
+.select
+{
+    width: 540px;
+    height: 50px;
+    margin-bottom: 25px;
+    -webkit-appearance: none;
+    background: transparent url("../images/arrow_down.png") no-repeat 97% center;
+}
+
+.field_text
+{
+    font-size: 18px;
+    color: rgb(85,85,85);
+    font-family: "Open Sans";
+}
+
+.label_male span,
+.label_female span
+{
+    margin-left: 9px;
+}
+
+.label_male span
+{
+    margin-right: 36px;
+}
+
+.gender
+{
+    margin: 19px 0 11px;
+}
+
+.text_area
+{
+    width: 505px;
+    height: 146px;
+    resize: none;
+}
+
+.active_field
+{
+    border-radius: 3px;
+    border: 2px solid #c9c9c9;
+    padding: 0 16px;
+    
+    &:hover
+    {
+        border-color: rgb(166, 166, 166);
+    }
+    
+    &:focus
+    {
+        border-color: $main_color;
+    }
+}
+
+.user_message
+{
+    margin-top: 41px;
+}
+
+input[type=submit]
+{
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: $main_color;
+    margin-top: 46px;
+    font-size: 19px;
+    line-height: 32px;
+    color: rgb(245,245,245);
+    font-family: "Georgia";
+    text-align: center;
+    
+    &:hover
+    {
+        background-color: $button_hover_color;   
+    }
+}    
+
+.cursor_pointer
+{
+    cursor: pointer;
+}
+//Конец стилей формы
+
+.footer
+{
+    background-color: #f5f5f5;
+    height: 70px;
+    text-align: center;
+    
+    span
+    {
+        font-size: 16px;
+        line-height: 75px;
+        color: rgb(85,85,85);
+        font-family: "Georgia";
+    }
+}

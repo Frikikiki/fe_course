@@ -1,0 +1,23 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.clear
+{
+    clear: both;
+}
+
+label, form, input
+{
+    display: inline-block;
+    text-align: left;
+}
