@@ -64,9 +64,9 @@
 
 .top_menu
 {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 20px;
 
     a
     {
@@ -98,7 +98,7 @@
         margin-right: 4px;
     }
 
-    .button_fav_movies i
+    .button_favorite_movies i
     {
         margin-right: 3px;    
     }
@@ -115,15 +115,14 @@
         width: 90%;
         max-width: 1000px;
         margin: 0 auto;
-        padding: 211px 20px 0;
+        padding-top: 150px;
     }
     
-    .fav_movies
+    .favorite_movies
     {
-        width: 100%;
         background-color: #f5f5f5;
         margin-top: 63px;
-        padding: 1px 0 60px;
+        padding: 35px 0 60px;
     }
     
     .write_form
@@ -134,29 +133,16 @@
     }
 }
 
-.content_left_side
+.content_top
 {
-   float: left;
-   margin-right: 59px;
-   width: 330px;
-   padding-left: 10px;
-   
-   img
-   {
-       width: 100%;
-       max-width: 330px;
-   }
-}
-
-.content_right_side
-{
-    margin-top: 24px;
-    width: 570px;
-    float: left;
-
-     blockquote
+    margin-top: 61px;
+    
+    .quote
     {
         color: rgb(245,245,245);
+        max-width: 500px;
+        width: 100%;
+        margin-top: 25px;
 
         p
         {
@@ -165,6 +151,7 @@
             font-family: "Georgia";
             font-style: italic;
         }
+        
         footer
         {
             font-size: 16px;
@@ -173,11 +160,85 @@
             line-height: 42px;
         }
     }
+
+   .my_photo
+   {
+       width: 100%;
+       max-width: 330px;
+   }
 }
 
-.left_side_information
+.information_about_me
 {
-    margin-top: 39px;
+    float: right;
+    position: static;
+    max-width: 570px;
+    margin: -127px 40px 0 0;
+    width: 100%;
+}
+    
+.text_name_title
+{
+    font-size: 48px;
+    color: rgb(51, 51, 51);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.text_ps_title
+{
+    font-size: 36px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.text_information
+{
+    line-height: 32px;
+    margin-bottom: 38px;
+    margin-top: 12px;
+}
+
+.to_my_profile
+{
+    margin-top: 46px;
+
+    a
+    {
+        font-size: 19px;
+        color: $main_color;
+        font-family: "Georgia";
+        margin-top: 50px;
+
+        &:hover span
+        {
+            color: rgb(9, 141, 114);
+        }
+    }
+} 
+
+.to_my_profile_text
+{
+    text-decoration: underline;
+}
+
+.rectangle
+{
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $main_color;
+    margin: 0 0 43px 0;
+}
+
+.favorite_list
+{
+    float: left;
+    max-width: 300px;
+    width: 100%;
+    margin: 45px 60px 0 0;
     
     span
     {
@@ -197,73 +258,9 @@
     }
     
     ul
-    {
-        
+    {        
         margin-left: 5px;
     }
-}
-    
-.right_side_information
-{
-    margin-top: 30px;
-    float: left;
-    width: 570px;
-    
-    h1
-    {
-        font-size: 48px;
-        color: rgb(51, 51, 51);
-        font-family: "Open Sans", sans-serif;
-        font-weight: bold;
-        margin-bottom: 21px; 
-    }
-    
-    .rectangle
-    {
-        width: 60px;
-        height: 6px;
-        border-radius: 3px;
-        background-color: $main_color;
-        margin: 0 0 43px 0;
-    }
-    
-    h2
-    {
-        font-size: 36px;
-        color: rgb(51,51,51);
-        font-family: "Open Sans";
-        font-weight: 400;
-    }
-    
-    p
-    {
-        line-height: 32px;
-        margin-bottom: 38px;
-        margin-top: 12px;
-    }
-    
-    .to_my_profile
-    {
-        margin-top: 46px;
-        
-        a
-        {
-            font-size: 19px;
-            color: $main_color;
-            font-family: "Georgia";
-            margin-top: 50px;
-            
-            &:hover span
-            {
-                color: rgb(9, 141, 114);
-            }
-        }
-    } 
-}
-
-.to_my_profile_text
-{
-    text-decoration: underline;
 }
 
 .list,
@@ -273,96 +270,92 @@
     color: rgb(85,85,85);
     font-family: "Georgia";
 }
-
-.fav_movies_container
+    
+.movies_description
 {
     max-width: 1200px;
-    width: 100%;
-    margin: 30px auto 0;
-    
-    h3
-    {
-        font-size: 36px;
-        color: rgb(51,51,51);
-        font-family: "Open Sans";
-        margin-bottom: 31px;
-        font-weight: 400;
-    }
-    
-    .lll_description
-    {
-        max-width: 285px;
-        width: 100%;
-        height: auto;
-        float: left;
-        
-        img
-        {
-            max-width: 285px;
-            width: 100%;
-            height: 190px;
-            border-radius: 5px;
-            margin-bottom: 19px;
-        }
-        
-        h4
-        {
-            font-size: 22px;
-            color: rgb(51,51,51);
-            font-family: "Open Sans";
-            font-weight: bold;
-            margin-bottom: 18px;
-            max-width: 285px;
-            width: 100%;
-        }
-        
-        p
-        {
-            font-size: 16px;
-            line-height: 28px;
-            color: rgb(85,85,85);
-            font-family: "Georgia";
-            max-width: 285px;
-            width: 100%;
-        }
-    }
-    
-    .taxi_driver_description,
-    .angry_man_description,
-    .will_description
-    {
-        @extend .lll_description;
-        margin-right: 20px;
-    }
-    
-    .all_movies
-    {
-        margin: 54px auto 0;
-        text-align: center;
-        width: 220px;
-    
-        button
-        {
-            background-color: $main_color;
-            width: 220px;
-            height: 50px;
-            border-radius: 5px;
-            
-            &:hover
-            {
-                background-color: $button_hover_color;
-            }
-        }
-        
-        span
-        {
-            font-size: 19px;
-            color: rgb(245,245,245);
-            font-family: "Georgia";
-            line-height: 50px;
-        }
-    }    
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
 }
+
+.favorite_movies_title
+{
+    font-size: 36px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans";
+    margin-bottom: 31px;
+    font-weight: 400;
+    width: 100%;
+} 
+
+.movie_picture
+{
+    max-width: 285px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 19px;
+}
+
+.movie_title
+{
+    font-size: 22px;
+    color: rgb(51,51,51);
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-bottom: 18px;
+    max-width: 285px;
+    width: 100%;
+}
+
+.movie_text
+{
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(85,85,85);
+    font-family: "Georgia";
+    max-width: 285px;
+    width: 100%;
+}
+
+.taxi_driver_description,
+.will_description,
+.angry_man_description
+{
+   margin-right: 20px;
+}
+
+.all_movies
+{
+    margin: 54px auto 0;
+    text-align: center;
+    max-width: 220px;
+    width: 100%;
+
+    button
+    {
+        background-color: $main_color;
+        max-width: 220px;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+
+        &:hover
+        {
+            background-color: $button_hover_color;
+            transition: 0.6s ease;
+        }
+    }
+
+    span
+    {
+        font-size: 19px;
+        color: rgb(245,245,245);
+        font-family: "Georgia";
+        line-height: 50px;
+    }
+}    
 
 //Начало стилей формы
 .line
@@ -396,7 +389,6 @@
 
 .input_text
 {
-    width: 504px;
     height: 46px;
 }
 
@@ -417,7 +409,6 @@
 
 .select
 {
-    width: 540px;
     height: 50px;
     margin-bottom: 25px;
     -webkit-appearance: none;
@@ -449,7 +440,6 @@
 
 .text_area
 {
-    width: 505px;
     height: 146px;
     resize: none;
 }
@@ -459,6 +449,9 @@
     border-radius: 3px;
     border: 2px solid #c9c9c9;
     padding: 0 16px;
+    max-width: 540px;
+    width: 100%;
+    box-sizing: border-box;
     
     &:hover
     {
@@ -474,11 +467,14 @@
 .user_message
 {
     margin-top: 41px;
+    max-width: 540px;
+    width: 100%;
 }
 
 input[type=submit]
 {
-    width: 220px;
+    max-width: 220px;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     background-color: $main_color;
@@ -491,13 +487,32 @@ input[type=submit]
     
     &:hover
     {
-        background-color: $button_hover_color;   
+        background-color: $button_hover_color;
+        transition: 0.6s ease;
     }
 }    
 
 .cursor_pointer
 {
     cursor: pointer;
+}
+
+.form_user input[type='text'],
+.select,
+.textarea
+{
+    max-width: 540px;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.form_user
+{
+    padding: 0 20px;
+    max-width: 540px;
+    width: 100%;
+    box-sizing: border-box;
 }
 //Конец стилей формы
 
