@@ -1,0 +1,215 @@
+@media screen and (max-width: 1350px)
+{
+    .favorite_movies_title
+    {
+        text-align: center;
+    }
+    
+    .movie_picture,
+    .movie_title,
+    .movie_text
+    {
+        max-width: 450px;
+    }
+
+    .each_movie_description
+    {
+        max-width: 450px;
+        margin: 0 auto 50px;
+    }
+
+    .favorite_movies_container
+    {
+        text-align: left;
+
+    }
+    
+    .all_movies_button
+    {
+        margin: 30px auto 0;
+    }
+       
+    .main_container .favorite_movies
+    {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1101px)
+{
+    .my_photo,
+    .quote
+    {
+        float:left;
+    }
+    
+    .my_photo
+    {
+        margin-right: 65px;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    .content_top
+    {
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .information_about_me
+    {
+        float: left;
+        max-width: none;
+        margin-top: 15px;
+    }
+    
+    .text_name_title
+    {
+        text-align: center;
+    }
+    
+    .rectangle
+    {
+        margin: 0 auto 25px;
+    }
+    
+    .quote
+    {
+        margin: 0 auto;
+    }
+    
+    .text_information,
+    {
+        max-width: none;
+        margin: 0 auto;
+    }
+    
+    .my_photo
+    {
+        margin: 0 auto;
+    }
+
+    .quote_main,
+    .quote_footer
+    {
+        color:#333;
+    }
+    
+    .favorite_list
+    {
+        width: 100%;
+        max-width: 600px;
+        margin: 35px 0 35px 0;
+    }
+    
+    .favorite
+    {
+        float: left;
+        margin: 0 60px 0 0;
+    }
+    
+    .write_me_string
+    {
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 1055px)
+{
+    .each_movie_description
+    {
+        max-width: 650px;
+        margin-bottom: 55px;
+    }
+
+    .movie_picture,
+    .movie_title,
+    .movie_text
+    {
+        width: 100%;
+        max-width: 650px;
+    }
+}
+
+
+@media screen and (max-width: 740px)
+{
+    .line
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 605px)
+{
+    .quote
+    {
+        text-align: center;
+        max-width: 90%;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 555px)
+{
+    .top_menu
+    {
+        display: none;
+    }  
+    
+    .button_menu
+    {
+        display: block;
+    }
+    
+    .button_menu ul
+    {
+
+        height: 50px;
+    }
+    
+    .button_menu:hover
+    {
+        color: rgb(245,245,245);
+        background-color: rgb(21,169,140);
+        transition: 0.6s ease;
+    }
+    
+    .button_menu :hover ul
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .all_movies
+    {
+        margin-top: 0;
+    }
+    
+    .text_name_title
+    {
+        font-size: 38px;
+    }
+    
+        .content_top .quote p
+    {
+        font-size: 20px;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width: 385px)
+{
+    .favorite_movies_title
+    {
+        font-size: 29px;
+    }
+    
+    .text_name_title
+    {
+        font-size: 30px;
+    }
+}
