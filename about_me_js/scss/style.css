@@ -223,7 +223,7 @@ body {
   max-width: 1200px;
   width: 90%;
   flex-flow: row wrap;
-  margin: 0 auto; }
+  margin: 20px auto 0; }
 
 .favorite_movies_title {
   font-size: 36px;
