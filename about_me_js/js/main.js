@@ -2,7 +2,9 @@ window.onload = function() {
     onShowMoreButtonClicked();
     openPopupWindowClicked();
     closePopupWindowClicked();
-   // validateForm();
+    validateForm();
+    changeFocus('email');
+    changeFocus('user_name');
 }
 
 function onShowMoreButtonClicked(){
@@ -25,7 +27,6 @@ function openPopupWindowClicked(){
         var body = document.body;
 
         popup.style.display = 'block';
-        popup.style.padding = '0 10px';
         body.style.overflowY = 'hidden';
     }
 }
@@ -38,7 +39,6 @@ function closePopupWindowClicked(){
         var body = document.body;
 
         popup.style.display = 'none';
-        popup.style.padding = '0 0;
         body.style.overflowY = 'auto';
     }
 
@@ -50,5 +50,32 @@ function closePopupWindowClicked(){
             popup.style.display = 'none';
             body.style.overflowY = 'auto';
         }
+    }
+}
+
+function validateForm(){
+    document.getElementById('submit').addEventListener('click', requiredField)
+    
+    function requiredField(event) {
+        var name = document.getElementById('user_name');
+        var email = document.getElementById('email');
+        var blank = '';
+        
+    event.preventDefault();
+    if(name.value === blank) {
+      name.style.borderColor = '#ee0707';
+      }
+
+    if(email.value === blank) {
+      email.style.borderColor = '#ee0707';
+      }
+    }
+}
+
+function changeFocus(field){
+    document.getElementById(field).addEventListener('focus', changeFocusNow)
+    
+    function changeFocusNow() {
+        this.style.borderColor = null;
     }
 }
