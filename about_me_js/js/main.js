@@ -15,7 +15,9 @@ function onShowMoreButtonClicked(){
         var moviesShow = document.getElementById('movies_showmore');
 
         moviesButton.style.display = 'none';
-        moviesShow.style.display = 'flex';
+        moviesShow.style.opacity = '1';
+        moviesShow.style.height = 'auto';
+        moviesShow.style.transition = 'opacity 2s';
     }
 }
 

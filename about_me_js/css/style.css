@@ -217,12 +217,14 @@ body {
   margin: 0 auto; }
 
 .movies_showmore {
-  display: none;
+  display: flex;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
   max-width: 1200px;
   width: 90%;
   flex-flow: row wrap;
-  margin: 20px auto 0;
-  transition: opacity 2s; }
+  margin: 20px auto 0; }
 
 .favorite_movies_title {
   font-size: 36px;
