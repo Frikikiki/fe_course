@@ -187,8 +187,8 @@
             
             <div class="popup_window" id="popup_window">            
                 <div class="write_form">
-                    <h3>WRITE ME</h3>
-                    <img src="images/close.png" alt="">
+                    <h3 class="popup_window_title">WRITE ME</h3>
+                    <img src="images/close.png" alt="" id="close" class="close">
                     <div class="write_form_container">
                         <form action="php/form_handler.php" name="write_form" method="post" class="form_user">
                             <label for="user_name" class="label_text field_title">Your name<span class="star"> *</span></label><br>
@@ -210,9 +210,7 @@
                                 <input type="radio" name="gender" class="cursor_pointer radio"/>
                                 <span>Female</span>
                             </label>
-                            <label class="user_message field_title">
-                                Your message<span class="star"> *</span>
-                            </label>
+                            <label class="user_message field_title">Your message</label>
                             <textarea name=”about_me” rows=10 class="active_field text_area field_text" required></textarea><br>
                             <input type="submit" value="Send" class="submit cursor_pointer">
                         </form>

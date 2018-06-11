@@ -132,12 +132,16 @@
     }
 }
 
-
 @media screen and (max-width: 740px)
 {
     .line
     {
         display: none;
+    }
+        
+    .main_container .write_form
+    {
+        margin: 35px 20px;
     }
 }
 
