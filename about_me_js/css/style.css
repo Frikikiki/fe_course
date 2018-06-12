@@ -2,9 +2,8 @@
   margin: 0;
   padding: 0;
   border: none; }
-
-*:focus {
-  outline: none; }
+  *:focus {
+    outline: none; }
 
 a {
   text-decoration: none; }
@@ -18,6 +17,9 @@ label, form, input {
 
 body {
   min-width: 320px; }
+
+.cursor_pointer {
+  cursor: pointer; }
 
 .header {
   width: auto;
@@ -165,18 +167,6 @@ body {
 .write_me_string_text {
   text-decoration: underline; }
 
-.popup_window {
-  width: 100%;
-  height: 100%;
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  z-index: 1;
-  overflow: auto; }
-
 .rectangle {
   width: 60px;
   height: 6px;
@@ -280,6 +270,18 @@ body {
     font-family: "Georgia";
     line-height: 50px; }
 
+.popup_window {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  z-index: 1;
+  overflow: auto; }
+
 .popup_window_title {
   margin: -12px 0 7px;
   font-size: 36px;
@@ -369,9 +371,6 @@ input[type=submit] {
   input[type=submit]:hover {
     background-color: #098d71;
     transition: 0.6s ease; }
-
-.cursor_pointer {
-  cursor: pointer; }
 
 .form_user input[type='text'],
 .select,

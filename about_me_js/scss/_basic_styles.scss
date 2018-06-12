@@ -1,0 +1,20 @@
+.clear
+{
+    clear: both;
+}
+
+label, form, input
+{
+    display: inline-block;
+    text-align: left;
+}
+
+body
+{
+    min-width: 320px;
+}
+
+.cursor_pointer
+{
+    cursor: pointer;
+}
