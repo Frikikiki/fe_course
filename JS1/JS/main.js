@@ -1,34 +1,33 @@
-var string = 'Hello, World';
-var uncorrectString = '     Hello, boys    and     girls   ';
+var string = prompt()
 
 
-//Функция возвращает последний символ строки
-function last(string) {
+//The function returns the last char of the string
+function getLastChar(string) {
   return string.charAt(string.length - 1);
 }
 
-//Функция возвращает строку без последнего символа
-function withoutLast(string) {
+//The function returns the string without last char
+function getStringWithoutLastChar(string) {
   return string.substring(0, string.length - 1);
 }
 
-//Функция зеркально отображает строку
+//The function reverses the string
 function reverseString(string) {
   var stringReverseVariable = '';
 
-  for (i = string.length - 1; i >= 0; i--) {
+  for (var i = string.length - 1; i >= 0; i--) {
     stringReverseVariable = stringReverseVariable + string.charAt(i);
   }
 
   return stringReverseVariable;
 }
 
-//Функция удаляет лишние пробелы в строке
-function removingSpaces(string) {
+//The function removes extra spaces in the string
+function removingExtraSpaces(string) {
   var F = 'Y';
   var correctSentence = '';
   
-  for (i=0; i < string.length - 1; i++) {
+  for (var i = 0; i < string.length - 1; i++) {
 	if ((string.charAt(i) == ' ') && (string.charAt(i+1) != ' ') && (F == 'N')) {
 	  correctSentence += ' ';
 	}
@@ -41,7 +40,7 @@ function removingSpaces(string) {
   return correctSentence;
 }
 
-console.log('Последний символ строки:', last(string));
-console.log('Без последнего символа строки:', withoutLast(string));
+console.log('Последний символ строки:', getLastChar(string));
+console.log('Без последнего символа строки:', getStringWithoutLastChar(string));
 console.log('Зеркальное отображение строки:', reverseString(string));
-console.log('Удаление лишних пробелов в строке:', removingSpaces(uncorrectString));
+console.log('Удаление лишних пробелов в строке:', removingExtraSpaces(string));
